@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class='bottom'>
                 <p>${item.title}</p>
                 <h2>$${item.price}.00</h2>
-                <button onclick='addtocart(${item.id})'>Add To Cart</button>
+                <button onclick='addToCart(${item.id})'>Add To Cart</button>
             </div>
         `;
 
@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function addtocart(id) {
         console.log(`Add to cart: ${id}`);
     }
+    
+    
 });
 
 function addToCart(){
@@ -39,3 +41,7 @@ function addToCart(){
     cartNumber += 1;
     numberInCart.innerHTML = cartNumber;
 }
+
+addToCart()
+
+
